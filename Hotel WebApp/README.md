@@ -8,8 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Clone the repository:
 
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Shivaraman21897/hotel_react_web.git
+cd Hotel WebApp
 
 # Install dependencies:
 
