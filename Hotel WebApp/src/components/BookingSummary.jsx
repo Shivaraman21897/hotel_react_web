@@ -1,3 +1,4 @@
+// components/BookingSummary.jsx
 import React from "react";
 import {
   Box,
@@ -16,7 +17,7 @@ export default function BookingSummary({ bookingDetails }) {
 
   if (!hotel || !searchDetails) return null;
 
-  const { name, location, images = [], price } = hotel;
+  const { name, location, images = [], price, id } = hotel;
 
   const checkInDate = new Date(searchDetails.checkIn);
   const checkOutDate = new Date(searchDetails.checkOut);
@@ -38,7 +39,8 @@ export default function BookingSummary({ bookingDetails }) {
   const taxes = subtotal * 0.12;
   const total = subtotal + taxes;
 
-  const usdTotal = (total * 0.0113).toFixed(2); 
+  const usdTotal = (total * 0.0113).toFixed(2);
+
 
   console.log("usdTotal:", usdTotal);
 
@@ -46,7 +48,7 @@ export default function BookingSummary({ bookingDetails }) {
     name: "John Doe",
     emailId: "john@example.com",
     phoneNumber: "9876543210",
-    hotelDetailsId: 1,
+    hotelDetailsId: id,
   };
 
   return (
