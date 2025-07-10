@@ -1,13 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <PayPalScriptProvider
+      options={{
+        "client-id":
+          "AQ6EF-ZBCZdW7U0zpuHaUq7n2JCr6OPBF5t3HfFbO_o4vWdJhhRmYXy-WjleZ6S9HkX5gZGIOjQywFrT",
+        currency: "USD",
+        intent: "capture",
+      }}
+    >
+      <App />
+    </PayPalScriptProvider>
   </React.StrictMode>
 );
 
