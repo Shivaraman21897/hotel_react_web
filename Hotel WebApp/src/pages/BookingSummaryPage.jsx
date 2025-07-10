@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Typography, Box } from '@mui/material';
 import BookingSummary from '../components/BookingSummary';
 import { useLocation } from 'react-router-dom';
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 export default function BookingSummaryPage() {
   const location = useLocation();
@@ -15,10 +14,7 @@ export default function BookingSummaryPage() {
         Booking Summary
       </Typography>
       <Box mt={2}>
-        <PayPalScriptProvider options={{ clientId: "YOUR_CLIENT_ID", currency: "USD" }}>
           <BookingSummary bookingDetails={rowData} />
-        </PayPalScriptProvider>
-
       </Box>
     </Container>
   );
