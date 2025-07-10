@@ -28,6 +28,7 @@ const hotels = [
     amenities: ['Free WiFi', 'Pool', 'Breakfast'],
     rating: 4.5,
     price: 3500,
+    id: 1
   },
   {
     name: 'Mountain Retreat',
@@ -41,6 +42,7 @@ const hotels = [
     amenities: ['Spa', 'Balcony View', 'Free Parking'],
     rating: 4.8,
     price: 4200,
+    id: 2
   },
   {
     name: 'ITC',
@@ -54,6 +56,7 @@ const hotels = [
     amenities: ['Spa', 'Balcony View', 'Free Parking', 'Free WiFi', 'Pool', 'Breakfast'],
     rating: 5,
     price: 9200,
+    id: 3
   },
   {
     name: 'Ags Holiday Resorts',
@@ -67,6 +70,7 @@ const hotels = [
     amenities: ['Spa', 'Balcony View', 'Free WiFi', 'Pool'],
     rating: 4.5,
     price: 7000,
+    id: 4
   },
 ];
 
