@@ -27,6 +27,7 @@ export default function HotelCard({ hotel, searchDetails }) {
     cancellation = 'Free cancellation available',
     breakfastIncluded = true,
     distance = '1.2 km from city center',
+    id
   } = hotel;
 
   const mainImage =
