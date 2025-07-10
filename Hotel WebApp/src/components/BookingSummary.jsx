@@ -38,7 +38,7 @@ export default function BookingSummary({ bookingDetails }) {
   const taxes = subtotal * 0.12;
   const total = subtotal + taxes;
 
-  const usdTotal = (total / 83).toFixed(2); // Example INR → USD
+  const usdTotal = (total * 0.0113).toFixed(2); 
 
   console.log("usdTotal:", usdTotal);
 
