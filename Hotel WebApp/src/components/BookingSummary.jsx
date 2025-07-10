@@ -1,4 +1,3 @@
-// components/BookingSummary.jsx
 import React from "react";
 import {
   Box,
